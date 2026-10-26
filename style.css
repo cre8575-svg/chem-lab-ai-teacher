@@ -1,0 +1,13 @@
+body { font-family: system-ui, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
+header { background: linear-gradient(135deg, #1e3a8a, #7c3aed); padding: 2rem; text-align: center; }
+nav { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 1rem; background: #1e293b; justify-content: center; }
+nav button { background: #3b82f6; color: white; border: none; padding: 0.75rem 1.25rem; border-radius: 8px; cursor: pointer; font-weight: 600; }
+nav button:hover { background: #2563eb; }
+main { padding: 2rem; max-width: 900px; margin: 0 auto; }
+#chat-panel { position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; padding: 1rem; border-top: 2px solid #3b82f6; }
+#chat-log { max-height: 300px; overflow-y: auto; margin-bottom: 0.5rem; background: #0f172a; padding: 1rem; border-radius: 8px; }
+#user-input { width: 70%; padding: 0.75rem; border-radius: 8px; border: 1px solid #475569; background: #334155; color: white; }
+button { padding: 0.75rem 1.5rem; background: #10b981; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.module { background: #1e293b; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; }
+.module h3 { color: #60a5fa; }
+.warning { color: #fbbf24; font-style: italic; }

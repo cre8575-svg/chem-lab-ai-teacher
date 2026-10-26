@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chem Lab AI Teacher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧪 Chem Lab AI Teacher</h1>
+    <p>Your free interactive guide to extraction, reflux, functional group transformations & purification</p>
+  </header>
+  <nav>
+    <button onclick="showModule('extraction')">Extraction</button>
+    <button onclick="showModule('reflux')">Reflux</button>
+    <button onclick="showModule('transformations')">Transformations</button>
+    <button onclick="showModule('purification')">Purification</button>
+    <button onclick="showChat()">AI Teacher Chat</button>
+  </nav>
+  <main id="content">
+    <div id="welcome">
+      <h2>Welcome to the Workshop</h2>
+      <p>Master the nuances of core organic lab techniques with step-by-step guidance, common pitfalls, and interactive questions.</p>
+      <p>Start with a module or jump straight into chatting with the AI teacher.</p>
+    </div>
+  </main>
+  <div id="chat-panel" style="display:none;">
+    <div id="chat-log"></div>
+    <input type="text" id="user-input" placeholder="Ask about extraction, pKa, recrystallization solvent choice..." onkeypress="if(event.key==='Enter') sendMessage()">
+    <button onclick="sendMessage()">Ask</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
